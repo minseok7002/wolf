@@ -20,11 +20,7 @@ client.on("guildDelete", guild => {
   client.user.setGame(`~도움말 을 쳐보세요.`);
 });
 
-client.on("guildMemberAdd", member => {
-member.guild.channels.find("name", "free-talk").sendMessage(member.toString() + "님이 서버에 가입하셨습니다!");
-  const guildMember = message.member;
-  guildMember.addRole('DP!');
-});
+
 
 
 client.on("message", async message => {
